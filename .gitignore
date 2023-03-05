@@ -1,0 +1,5 @@
+bin/
+obj/
+x64
+SnakeGame/x64
+.vs/
