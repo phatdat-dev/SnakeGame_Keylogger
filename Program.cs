@@ -40,7 +40,7 @@ namespace Windows_System_Application
                 return;
             }
 
-            //StartWithOS();
+            StartWithOS.run();
             Windows.HideWindow();
 
             StartTimmer();
