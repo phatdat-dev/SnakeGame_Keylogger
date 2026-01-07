@@ -10,3 +10,5 @@ regedit  : Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\
 Mở task manager lên kiếm từ khóa đang chạy ngầm "Windows System Application" để tắt
 
 p/s dùng để lùa gà
+
+DEMO: https://www.youtube.com/watch?v=GswR8Xxv_lQ
